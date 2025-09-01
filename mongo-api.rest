@@ -37,12 +37,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODBhZ
 }
 
 ### User route - Register a new user
-POST http://localhost:3030/mongo/auth/register
+POST http://localhost:3001/mongo/auth/register
 Content-Type: application/json
 
 {
-  "fullName": "John Doe",
-  "email": "johndoe@example.com",
+  "fullName": "John Doe1",
+  "email": "johndoe@example1.com",
   "password": "securePassword123"
 }
 
