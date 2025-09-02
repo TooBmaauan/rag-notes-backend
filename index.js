@@ -15,7 +15,7 @@ const app = express();
 
 app.set("trust proxy", 1);
 
-// Global middlewares
+// Global middlewares ()
 app.use(helmet());
 
 const corsOptions = {
