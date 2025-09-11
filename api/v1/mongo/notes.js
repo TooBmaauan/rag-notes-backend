@@ -100,7 +100,9 @@ router.get("/public-notes/:userId", async (req, res) => {
     });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: true, message: "Server error", details: err.message });
+    res
+      .status(500)
+      .json({ error: true, message: "Server error", details: err.message });
   }
 });
 
@@ -269,7 +271,7 @@ router.post("/answer-question/:userId", async (req, res) => {
       },
     },
   ]);
-
+  // console.log(topNotes, questionEmbedding);
   if (!topNotes.length) {
     return res
       .status(404)

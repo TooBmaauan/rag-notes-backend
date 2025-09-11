@@ -74,3 +74,12 @@ Cookie: accessToken=YOUR_JWT_TOKEN
 ### User notes (paginated + search)
 GET http://localhost:3030/mongo/get-all-notes?page=2&limit=5&q=vector
 Cookie: accessToken=YOUR_JWT_TOKEN
+
+
+###
+POST http://localhost:3030/mongo/answer-question/68b6936848418f5d0e2d08f7
+Content-Type: application/json
+
+{
+  "question": "hello world"
+}
